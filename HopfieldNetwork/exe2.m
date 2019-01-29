@@ -1,0 +1,1 @@
+nUnits = 20;nTrainPat = 5;err = 0;% Generate random patterns.P = double(0.5 > rand(nTrainPat,nUnits));% Memorize.autoConnectivity;% Recall.j = 1;yInitial = 0.5*P(j,:)'; % Weak memory.Y = AsynchUp (yInitial, HP, 100);% How many errors are there?err = sum(abs(P(j,:)-Y(11,:)));disp(err);
